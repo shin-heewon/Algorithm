@@ -17,19 +17,22 @@ public class No1816 {
         for(int i=0; i<arr.length; i++){
             for(int j=2; j<=1000000; j++){
                 if(arr[i]%j==0){
-                    result[i]="NO";
+                    //result[i]="NO";
+                    flag = true;
                     break;
                 }
             }
-            if(result[i]==null || result[i].equals("")){
-                result[i]="YES";
-            }
+//            if(result[i]==null || result[i].equals("")){
+//                result[i]="YES";
+//            }
+            System.out.println(!flag?"YES":"NO");
+            flag = false;
         }
 
 
-        for(int i=0; i<arr.length; i++){
-            System.out.println(result[i]);
-        }
+//        for(int i=0; i<arr.length; i++){
+//            System.out.println(result[i]);
+//        }
 
     }
 }
